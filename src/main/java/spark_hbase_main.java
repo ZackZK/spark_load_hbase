@@ -27,7 +27,18 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/*
+* hbase content:
+* hbase(main):003:0> scan 'scores'
+ROW                             COLUMN+CELL
+ Jim                            column=course:art, timestamp=1441549968185, value=80
+ Jim                            column=course:math, timestamp=1441549968167, value=89
+ Jim                            column=grade:, timestamp=1441549968142, value=4
+ Tom                            column=course:art, timestamp=1441549912222, value=88
+ Tom                            column=course:math, timestamp=1441549842348, value=97
+ Tom                            column=grade:, timestamp=1441549820516, value=5
+2 row(s) in 0.1330 seconds
+*/
 public class spark_hbase_main {
     private static String appName = "Hello";
     private static String startTime = "201409_0930";
